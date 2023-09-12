@@ -6,6 +6,17 @@ using System.Windows.Forms;
 
 namespace IS1._20_DvornyjVA
 {
+    static class Auth
+    {
+        //Статичное поле, которое хранит значение статуса авторизации
+        public static bool auth = false;
+        //Статичное поле, которое хранит значения ID пользователя
+        public static string auth_id = null;
+        //Статичное поле, которое хранит значения ФИО пользователя
+        public static string auth_fio = null;
+        //Статичное поле, которое хранит количество привелегий пользователя
+        public static string auth_role;
+    }
     internal static class Program
     {
         /// <summary>
@@ -16,7 +27,8 @@ namespace IS1._20_DvornyjVA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new InForm());
+            Application.Run(new MainForm()); //открытие второй формы, после закрытия первой
         }
     }
 }

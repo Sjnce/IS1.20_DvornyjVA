@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IS1._20_DvornyjVA
 {
-    public partial class Form1 : Form
+    public partial class InForm : Form
     {
-        public Form1()
+        public InForm()
         {
             InitializeComponent();
         }
