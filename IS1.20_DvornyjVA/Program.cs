@@ -27,8 +27,8 @@ namespace IS1._20_DvornyjVA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InForm());
-            Application.Run(new MainForm()); //открытие второй формы, после закрытия первой
+            Application.Run(new LoadingForm());
+            //Application.Run(new MainForm()); //открытие второй формы, после закрытия первой
         }
     }
 }
