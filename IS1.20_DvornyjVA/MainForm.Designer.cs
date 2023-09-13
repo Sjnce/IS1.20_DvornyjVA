@@ -77,6 +77,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Категории";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -88,6 +89,7 @@
             this.button3.TabIndex = 10;
             this.button3.Text = "Продажи";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -99,6 +101,7 @@
             this.button4.TabIndex = 11;
             this.button4.Text = "Персонал";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -110,6 +113,7 @@
             this.button5.TabIndex = 12;
             this.button5.Text = "Продукты";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // MainForm
             // 

@@ -33,18 +33,18 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Cat_Opisanie = new System.Windows.Forms.TextBox();
+            this.CatDescTb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Cat_Name = new System.Windows.Forms.TextBox();
+            this.CatNameTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Cat_ID = new System.Windows.Forms.TextBox();
+            this.CatIdTb = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CatDGV = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CatDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
@@ -57,6 +57,7 @@
             this.button3.TabIndex = 36;
             this.button3.Text = "Удалить";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -68,19 +69,20 @@
             this.button2.TabIndex = 35;
             this.button2.Text = "Редактировать";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.MediumPurple;
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.panel3);
-            this.panel5.Controls.Add(this.Cat_Opisanie);
+            this.panel5.Controls.Add(this.CatDescTb);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.panel1);
-            this.panel5.Controls.Add(this.Cat_Name);
+            this.panel5.Controls.Add(this.CatNameTb);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.panel2);
-            this.panel5.Controls.Add(this.Cat_ID);
+            this.panel5.Controls.Add(this.CatIdTb);
             this.panel5.Location = new System.Drawing.Point(8, 73);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(402, 164);
@@ -104,12 +106,12 @@
             this.panel3.Size = new System.Drawing.Size(225, 5);
             this.panel3.TabIndex = 11;
             // 
-            // Cat_Opisanie
+            // CatDescTb
             // 
-            this.Cat_Opisanie.Location = new System.Drawing.Point(167, 121);
-            this.Cat_Opisanie.Name = "Cat_Opisanie";
-            this.Cat_Opisanie.Size = new System.Drawing.Size(225, 20);
-            this.Cat_Opisanie.TabIndex = 10;
+            this.CatDescTb.Location = new System.Drawing.Point(167, 121);
+            this.CatDescTb.Name = "CatDescTb";
+            this.CatDescTb.Size = new System.Drawing.Size(225, 20);
+            this.CatDescTb.TabIndex = 10;
             // 
             // label3
             // 
@@ -129,12 +131,12 @@
             this.panel1.Size = new System.Drawing.Size(225, 5);
             this.panel1.TabIndex = 8;
             // 
-            // Cat_Name
+            // CatNameTb
             // 
-            this.Cat_Name.Location = new System.Drawing.Point(167, 70);
-            this.Cat_Name.Name = "Cat_Name";
-            this.Cat_Name.Size = new System.Drawing.Size(225, 20);
-            this.Cat_Name.TabIndex = 7;
+            this.CatNameTb.Location = new System.Drawing.Point(167, 70);
+            this.CatNameTb.Name = "CatNameTb";
+            this.CatNameTb.Size = new System.Drawing.Size(225, 20);
+            this.CatNameTb.TabIndex = 7;
             // 
             // label2
             // 
@@ -154,12 +156,12 @@
             this.panel2.Size = new System.Drawing.Size(225, 5);
             this.panel2.TabIndex = 5;
             // 
-            // Cat_ID
+            // CatIdTb
             // 
-            this.Cat_ID.Location = new System.Drawing.Point(167, 21);
-            this.Cat_ID.Name = "Cat_ID";
-            this.Cat_ID.Size = new System.Drawing.Size(225, 20);
-            this.Cat_ID.TabIndex = 4;
+            this.CatIdTb.Location = new System.Drawing.Point(167, 21);
+            this.CatIdTb.Name = "CatIdTb";
+            this.CatIdTb.Size = new System.Drawing.Size(225, 20);
+            this.CatIdTb.TabIndex = 4;
             // 
             // button1
             // 
@@ -171,14 +173,16 @@
             this.button1.TabIndex = 34;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // CatDGV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(424, 73);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(571, 525);
-            this.dataGridView1.TabIndex = 37;
+            this.CatDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CatDGV.Location = new System.Drawing.Point(424, 73);
+            this.CatDGV.Name = "CatDGV";
+            this.CatDGV.Size = new System.Drawing.Size(571, 525);
+            this.CatDGV.TabIndex = 37;
+            this.CatDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CatDGV_CellContentClick);
             // 
             // label1
             // 
@@ -199,7 +203,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.CatDGV);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CategoryForm";
@@ -207,7 +211,7 @@
             this.Load += new System.EventHandler(this.CategoryForm_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CatDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,15 +223,15 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox Cat_Opisanie;
+        private System.Windows.Forms.TextBox CatDescTb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox Cat_Name;
+        private System.Windows.Forms.TextBox CatNameTb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox Cat_ID;
+        private System.Windows.Forms.TextBox CatIdTb;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView CatDGV;
         private System.Windows.Forms.Label label1;
     }
 }
