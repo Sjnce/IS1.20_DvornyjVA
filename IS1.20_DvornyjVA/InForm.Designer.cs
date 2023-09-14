@@ -41,6 +41,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,6 +135,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel4.Controls.Add(this.button6);
             this.panel4.Controls.Add(this.button2);
             this.panel4.Location = new System.Drawing.Point(-6, -2);
             this.panel4.Name = "panel4";
@@ -164,6 +166,19 @@
             this.button3.Text = "Очистить";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.MediumPurple;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Impact", 15.75F);
+            this.button6.Location = new System.Drawing.Point(218, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(33, 33);
+            this.button6.TabIndex = 14;
+            this.button6.Text = "-";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // InForm
             // 
@@ -206,6 +221,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button6;
     }
 }
 

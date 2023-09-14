@@ -35,6 +35,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.SellerNamelbl = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,11 +116,23 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // SellerNamelbl
+            // 
+            this.SellerNamelbl.AutoSize = true;
+            this.SellerNamelbl.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SellerNamelbl.Location = new System.Drawing.Point(12, 656);
+            this.SellerNamelbl.Name = "SellerNamelbl";
+            this.SellerNamelbl.Size = new System.Drawing.Size(167, 23);
+            this.SellerNamelbl.TabIndex = 40;
+            this.SellerNamelbl.Text = "Выход из системы";
+            this.SellerNamelbl.Click += new System.EventHandler(this.SellerNamelbl_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1238, 691);
+            this.Controls.Add(this.SellerNamelbl);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
@@ -132,6 +145,7 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -144,5 +158,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label SellerNamelbl;
     }
 }

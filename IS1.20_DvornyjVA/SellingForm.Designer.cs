@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SellingForm));
-            this.button3 = new System.Windows.Forms.Button();
             this.PRINT = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -63,22 +62,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ORDERDGV)).BeginInit();
             this.SuspendLayout();
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.MediumPurple;
-            this.button3.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(782, 542);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 56);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Удалить";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // PRINT
             // 
             this.PRINT.BackColor = System.Drawing.Color.MediumPurple;
             this.PRINT.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PRINT.Location = new System.Drawing.Point(651, 542);
+            this.PRINT.Location = new System.Drawing.Point(766, 542);
             this.PRINT.Name = "PRINT";
             this.PRINT.Size = new System.Drawing.Size(125, 56);
             this.PRINT.TabIndex = 25;
@@ -210,7 +198,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.MediumPurple;
             this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(535, 542);
+            this.button1.Location = new System.Drawing.Point(523, 542);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 56);
             this.button1.TabIndex = 24;
@@ -292,9 +280,8 @@
             this.Amtlbl.Font = new System.Drawing.Font("Impact", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Amtlbl.Location = new System.Drawing.Point(731, 282);
             this.Amtlbl.Name = "Amtlbl";
-            this.Amtlbl.Size = new System.Drawing.Size(63, 36);
+            this.Amtlbl.Size = new System.Drawing.Size(0, 36);
             this.Amtlbl.TabIndex = 34;
-            this.Amtlbl.Text = "руб.";
             this.Amtlbl.Click += new System.EventHandler(this.label9_Click);
             // 
             // SellerNamelbl
@@ -306,11 +293,12 @@
             this.SellerNamelbl.Size = new System.Drawing.Size(140, 36);
             this.SellerNamelbl.TabIndex = 35;
             this.SellerNamelbl.Text = "Продавец";
+            this.SellerNamelbl.Click += new System.EventHandler(this.SellerNamelbl_Click);
             // 
             // Datelbl
             // 
             this.Datelbl.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Datelbl.Location = new System.Drawing.Point(812, 11);
+            this.Datelbl.Location = new System.Drawing.Point(821, 11);
             this.Datelbl.Name = "Datelbl";
             this.Datelbl.Size = new System.Drawing.Size(178, 45);
             this.Datelbl.TabIndex = 36;
@@ -345,7 +333,6 @@
             this.Controls.Add(this.ORDERDGV);
             this.Controls.Add(this.BillsDGV);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.PRINT);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.button1);
@@ -366,8 +353,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button PRINT;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;

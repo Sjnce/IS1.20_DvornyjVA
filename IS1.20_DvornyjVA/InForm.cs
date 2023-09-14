@@ -20,6 +20,7 @@ namespace IS1._20_DvornyjVA
             InitializeComponent();
         }
 
+        public static string Sellername = "";
         SqlConnection Con = new SqlConnection(@"server=10.90.12.110;port=33333;user=st_1_20_10;database=is_1_20_st10_KURS;password=34088849;"); //Подключение к БД. chuc.caseum.ru - дома, 10.90.12.110 - в чюке
 
         //Вычисление хэша строки и возрат его из метода
@@ -150,11 +151,29 @@ namespace IS1._20_DvornyjVA
                         {
                             MessageBox.Show("Если вы администратор, то введите правильные логин и пароль");
                         }
-                    }/*
-                    else if (RoleCb.SelectedItem.ToString() == "Продавец")
+                    }
+                    else //if (RoleCb.SelectedItem.ToString() == "Продавец")
                     {
-                        MessageBox.Show("Вы в должности продавца");
-                    */
+                        //MessageBox.Show("Вы в должности продавца");
+                        Con.Open();
+                        SqlDataAdapter sda = new SqlDataAdapter("Select count(8) fron SellerTbl where SellerName='"+UnameTb.Text+"' and SellerPass='"+PassTb.Text+"'", Con);
+                        DataTable dt = new DataTable(); 
+                        sda.Fill(dt);
+                        if (dt.Rows[0][0].ToString() == "1")
+                        {
+                            Sellername = UnameTb.Text;
+                            SellingForm sell = new SellingForm();
+                            sell.Show();
+                            this.Hide();
+                            Con.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Неправильно введён логин или пароль");
+                        }
+                        Con.Close();
+                    }
+                    
                 }
                 else
                 {

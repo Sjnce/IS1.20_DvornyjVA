@@ -52,22 +52,29 @@ namespace IS1._20_DvornyjVA
 
         private void button4_Click(object sender, EventArgs e)
         {
-            openNewForm(new SellersForm());
+            openNewForm(new SellersForm()); //форма в форме а точнее в dgv (персонал)
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            openNewForm(new ProductsForm());
+            openNewForm(new ProductsForm()); //форма в форме а точнее в dgv (товар)
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openNewForm(new CategoryForm());
+            openNewForm(new CategoryForm()); //форма в форме а точнее в dgv (категории)
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            openNewForm(new SellingForm());
+            openNewForm(new SellingForm()); //форма в форме а точнее в dgv (продажи)
+        }
+
+        private void SellerNamelbl_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            InForm login = new InForm();
+            login.Show();
         }
     }
 }

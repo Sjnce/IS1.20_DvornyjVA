@@ -47,6 +47,7 @@ namespace IS1._20_DvornyjVA
         {
             populate();
             populatebills();
+            SellerNamelbl.Text = InForm.Sellername;
         }
         int flag = 0;
         private void ProdDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -132,6 +133,11 @@ namespace IS1._20_DvornyjVA
         }
 
         private void CatCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SellerNamelbl_Click(object sender, EventArgs e)
         {
 
         }
