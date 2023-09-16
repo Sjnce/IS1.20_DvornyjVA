@@ -118,6 +118,7 @@
             this.ProdPrice.Name = "ProdPrice";
             this.ProdPrice.Size = new System.Drawing.Size(225, 20);
             this.ProdPrice.TabIndex = 13;
+            this.ProdPrice.TextChanged += new System.EventHandler(this.ProdPrice_TextChanged);
             // 
             // label4
             // 

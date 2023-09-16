@@ -142,6 +142,11 @@ namespace IS1._20_DvornyjVA
 
         }
 
+        private void ProdPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void label9_Click(object sender, EventArgs e)
         {
 
